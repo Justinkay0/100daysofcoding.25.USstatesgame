@@ -16,3 +16,4 @@ data = pd.read_csv('weather_data.csv')
 
 temp_list = data['temp'].to_list()
 print(data['temp'].mean())
+print(data['temp'].max())
