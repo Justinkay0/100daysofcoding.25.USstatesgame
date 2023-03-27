@@ -17,4 +17,8 @@ data = pd.read_csv('weather_data.csv')
 temp_list = data['temp'].to_list()
 # print(data['temp'].mean())
 # print(data['temp'].max())
-print(data[data.temp == data.temp.max()])
+# print(data[data.temp == data.temp.max()])
+
+monday = data[data.day == 'Monday']
+# printing fahrenheit from Celsius
+print((monday.temp * 1.8) + 32)
