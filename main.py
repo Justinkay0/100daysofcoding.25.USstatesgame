@@ -1,6 +1,6 @@
-with open('weather_data.csv', mode='r') as f:
-    data = f.readlines()
+import csv
 
-data.str.strip()
-
-print(data)
+with open('weather_data.csv') as data_file:
+    data = csv.reader(data_file)
+    for row in data:
+        print(row)
